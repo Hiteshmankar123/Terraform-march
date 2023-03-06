@@ -43,7 +43,7 @@ resource "aws_security_group" "allow_http" {
 }
 
 resource "aws_instance" "my_vm" {
-  ami           = "ami-0c94855ba95c71c99"  # Amazon Linux 2 AMI
+  ami           = "ami-006dcf34c09e50022"  # Amazon Linux 2 AMI
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.subnet1.id
   vpc_security_group_ids = [aws_security_group.allow_http.id]
